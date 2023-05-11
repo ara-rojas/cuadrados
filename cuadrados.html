@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cuadrados</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-style: solid;
+        border-width: 3px;
+        cursor: pointer;
+        border-color: blueviolet;
+      }
+      img:target {
+        visibility: hidden;
+      }
+      img:hover {
+        border-color: black;
+      }
+      img:hover ~ img {
+        visibility: hidden;
+      }
+      div {
+        width: 800px;
+        height: 800px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: blue;
+        position: relative;
+        margin: 0 auto;
+      }
+      #imagen1 {
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+      }
+
+      #imagen2 {
+        top: 200px;
+        left: 200px;
+        z-index: 2;
+      }
+      #imagen3 {
+        top: 300px;
+        left: 300px;
+        z-index: 3;
+      }
+
+      #imagen4 {
+        top: 400px;
+        left: 400px;
+        z-index: 4;
+      }
+      #imagen5 {
+        top: 500px;
+        left: 500px;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img id="imagen1" src="cuadrado.jpg" alt="cuadrado xd" />
+
+      <img id="imagen2" src="aaa.jpg" alt="cuadrado otro" />
+
+      <img id="imagen3" src="colores.jpg" alt="cuadrado3" />
+
+      <img id="imagen4" src="florhei.jpg" alt="cuadrado2" />
+
+      <img id="imagen5" src="imagen.jpg" alt="cuadrado1" />
+    </div>
+  </body>
+</html>
